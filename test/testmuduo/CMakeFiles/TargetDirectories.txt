@@ -1,0 +1,3 @@
+/home/lcl/chat/testmuduo/CMakeFiles/edit_cache.dir
+/home/lcl/chat/testmuduo/CMakeFiles/rebuild_cache.dir
+/home/lcl/chat/testmuduo/CMakeFiles/server.dir
