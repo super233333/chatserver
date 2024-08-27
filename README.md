@@ -30,9 +30,9 @@ include：项目的头文件
 
 src：项目的源文件
 
-test：muduo网络库使用的demo
+test：Muduo网络库使用的demo
 
-thirdparty：存放json.hpp
+thirdparty：存放 json.hpp
 
 ## 数据库设计
 ![image](https://github.com/user-attachments/assets/c39934ff-13b5-4b04-bc9a-8a963034c47a)
@@ -45,11 +45,12 @@ thirdparty：存放json.hpp
 功能分为：登录账号、注册账号、退出账号、一对一聊天业务、创建群聊业务、加入群聊业务、群内发消息业务、添加好友业务、离线消息存储业务。
 
 特别说明：以下示例已经启动Nginx和redis-server，Nginx集群了两台服务器，端口分别为6000、6002。
+
 ![image](https://github.com/user-attachments/assets/99d9a429-62f2-4e1c-807f-4c9567483771)
 
 
 ## 启动服务器
-这里启动两台服务器，因为Nginx配置tcp负载均衡时配置了两台。
+这里启动两台服务器，因为 Nginx 配置 tcp 负载均衡时配置了两台。
 
 ![image](https://github.com/user-attachments/assets/82363bd5-0c09-4b5f-8e80-57b1aff31fc0)
 ![image](https://github.com/user-attachments/assets/dda5b5e5-7d58-40e1-b76b-97a2ca04dffd)
@@ -61,7 +62,7 @@ thirdparty：存放json.hpp
 
 ![image](https://github.com/user-attachments/assets/b81aa0e0-0d38-46bf-9ff6-9c1644b6128d)
 
-由于Nginx，此时client01和client02分别连接到不同的server端
+由于Nginx，此时 client01 和 client02 分别连接到不同的 server 端
 
 ![image](https://github.com/user-attachments/assets/c9d0422a-1066-4f6e-be51-afdf3e963af0)
 
@@ -69,19 +70,21 @@ thirdparty：存放json.hpp
 ## 注册账号
 ![image](https://github.com/user-attachments/assets/6c682d21-2e24-4666-a3a5-7057964304bf)
 
-Tom 用户注册成功，他的用户id为25，登录时通过用户id去登录。
+Tom 用户注册成功，他的用户 id 为 25，登录时通过用户 id 去登录。
 
 ## 登录成功
+两台客户端分别登录了两个用户，用户id分别为25和26，可以看到用户25,26的用户还没有添加任何好友和群聊。
+
 ![image](https://github.com/user-attachments/assets/e6943952-e151-4d47-bd5c-825d6953246c)
 
 ![image](https://github.com/user-attachments/assets/cf44bb82-31c8-4795-b6ba-6159ae515f61)
 
-两台客户端分别登录了两个用户，用户id分别为25和26，可以看到用户25,26的用户还没有添加任何好友和群聊。
+user表中可以看到用户的登录状态
 
 ![image](https://github.com/user-attachments/assets/f284b6cd-9f3b-4692-a85a-c8daea292aac)
 
 ## 一对一聊天业务
-现在进行id=24和id=25之间聊天，不是好友也可以互相聊天。
+现在进行 id = 25 和 id = 26 之间聊天，不是好友也可以互相聊天。
 
 一对一聊天的命令行输入为：chat:用户id:内容
 
@@ -103,25 +106,24 @@ Tom 用户注册成功，他的用户id为25，登录时通过用户id去登录�
 ## 加入群聊业务
 ![image](https://github.com/user-attachments/assets/bff2b57f-aa40-472f-b976-f5c080008c9c)
 
-![image](https://github.com/user-attachments/assets/98ba1698-d804-4d56-ab31-325a281d880d)
-
 userid=26的用户加入groupid=3的群，他的权限为普通权限。
 
+![image](https://github.com/user-attachments/assets/98ba1698-d804-4d56-ab31-325a281d880d)
+
 ## 群聊业务
+userid=25的用户在groupid=3的群里发了一条消息。
+
 ![image](https://github.com/user-attachments/assets/1aa5f9d9-911e-48d9-a8de-3e2ba714a90e)
 
+groupid=3的群内成员收到了这条消息。
 ![image](https://github.com/user-attachments/assets/17de795b-c741-4b9d-a238-c24be8f1752f)
-
-userid=25的用户在groupid=3的群里发了一条消息，群内成员收到了这条消息。
 
 ## 添加好友业务
 ![image](https://github.com/user-attachments/assets/329cf5fc-3c65-437f-92d3-d3036ae387a8)
 
+可以看到，userid=26的用户有一个好友，好友id=25，即userid=25的用户。
 
 ![image](https://github.com/user-attachments/assets/aba52fd2-5b72-49ab-94db-988cbb39685c)
-
-
-可以看到，userid=26的用户有一个好友，好友id=25，即userid=25的用户。
 
 ## 离线消息存储业务
 现在我们让userid=26的用户退出。
