@@ -30,11 +30,11 @@ src：项目的源文件
 test：muduo网络库使用的demo和json序列化和反序列化的demo
 thirdparty：存放json.hpp
 ## 数据库设计
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/c39934ff-13b5-4b04-bc9a-8a963034c47a)
 
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/6bd84d5d-1fe9-46a5-962a-7993727f9cd0)
 
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/12c254a4-e44d-41c1-b928-d01af3123227)
 
 ## 项目介绍
 功能分为：登录账号、注册账号、退出账号、一对一聊天业务、创建群聊业务、加入群聊业务、群内发消息业务、添加好友业务、离线消息存储业务。
