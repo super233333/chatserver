@@ -15,19 +15,17 @@
 
 
 ## 项目架构
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/13933448-3717-4eef-8355-d0c69e948972)
 
 ## 项目目录
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/5ea82c5e-5bf2-4903-8e33-20c0c6b486ec)
 
-autobuild.sh：一键编译脚本
-chat.sql：创建数据库表的sql脚本
 bin：存放服务器和客户端的可执行程序
 build：cmake编译生成的临时文件
 CMakeLists.txt：项目使用cmake作为编译环境
 include：项目的头文件
 src：项目的源文件
-test：muduo网络库使用的demo和json序列化和反序列化的demo
+test：muduo网络库使用的demo
 thirdparty：存放json.hpp
 ## 数据库设计
 ![image](https://github.com/user-attachments/assets/c39934ff-13b5-4b04-bc9a-8a963034c47a)
@@ -40,13 +38,17 @@ thirdparty：存放json.hpp
 功能分为：登录账号、注册账号、退出账号、一对一聊天业务、创建群聊业务、加入群聊业务、群内发消息业务、添加好友业务、离线消息存储业务。
 
 特别说明：以下示例已经启动Nginx和redis-server，Nginx集群了两台服务器，端口分别为6000、6002。
+![image](https://github.com/user-attachments/assets/99d9a429-62f2-4e1c-807f-4c9567483771)
+
 
 ## 启动服务器
 这里启动两台服务器，因为Nginx配置tcp负载均衡时配置了两台。
 
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/f3bfab93-9a56-4fe0-9482-23cc795aca23)
 
-在这里插入图片描述
+
+![image](https://github.com/user-attachments/assets/ee2c7c10-9c9b-4279-a393-7c19ea11314a)
+
 
 ## 启动客户端
 同样启动两台客户端进行聊天业务。
