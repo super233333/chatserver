@@ -115,20 +115,18 @@ userid=26的用户加入groupid=3的群，他的权限为普通权限。
 userid=25的用户在groupid=3的群里发了一条消息，群内成员收到了这条消息。
 
 ## 添加好友业务
-![image](https://github.com/user-attachments/assets/001b9fc5-955d-4692-9098-fcefe94b18ec)
+![image](https://github.com/user-attachments/assets/329cf5fc-3c65-437f-92d3-d3036ae387a8)
 
-![image](https://github.com/user-attachments/assets/4a715252-3ffd-4062-8bcf-2e0c48fd58b6)
 
-可以看到，userid=25的用户有一个好友，好友id=26，即userid=26的用户。
+![image](https://github.com/user-attachments/assets/aba52fd2-5b72-49ab-94db-988cbb39685c)
+
+
+可以看到，userid=26的用户有一个好友，好友id=25，即userid=25的用户。
 
 ## 离线消息存储业务
 现在我们让userid=26的用户退出，userid=25的用户持续为他发消息。
 
-![image](https://github.com/user-attachments/assets/29f32a48-bd08-4427-b4e6-c021dde705a7)
 
-![image](https://github.com/user-attachments/assets/00ba61d2-dc97-4559-9a75-18a55d2b4a74)
-
-![image](https://github.com/user-attachments/assets/1acd0aa6-d9ec-43fe-93e0-58b4895330e4)
 
 数据库里已经存了两条消息。
 
