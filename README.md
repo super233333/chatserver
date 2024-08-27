@@ -67,19 +67,19 @@ thirdparty：存放json.hpp
 
 
 ## 注册账号
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/6c682d21-2e24-4666-a3a5-7057964304bf)
 
-wang wu用户注册成功，他的用户id为3，登录时通过用户id去登录。
+Tom 用户注册成功，他的用户id为25，登录时通过用户id去登录。
 
 ## 登录成功
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/e6943952-e151-4d47-bd5c-825d6953246c)
 
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/cf44bb82-31c8-4795-b6ba-6159ae515f61)
 
-两台客户端分别登录了两个用户，用户id分别为1和3，可以看到用户id为1的用户已经添加了好友和群聊，但是id为3的用户还没有添加任何好友和群聊。
+两台客户端分别登录了两个用户，用户id分别为25和26，可以看到用户25,26的用户还没有添加任何好友和群聊。
 
 ## 一对一聊天业务
-现在进行id=3和id=1之间聊天，不是好友也可以互相聊天。
+现在进行id=24和id=25之间聊天，不是好友也可以互相聊天。
 
 一对一聊天的命令行输入为：chat:用户id:内容
 
