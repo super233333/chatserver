@@ -12,6 +12,7 @@
 5、使用mysql关系型数据库作为项目数据的落地存储；
 
 6、使用连接池提高数据库的数据存取功能。
+![image](https://github.com/user-attachments/assets/9d3ea4cf-84dd-4367-9d16-f946a4642ad8)
 
 登录 login
 {"msgid":1,"id":13,"password":"123456"}
