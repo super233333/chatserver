@@ -21,12 +21,19 @@
 ![image](https://github.com/user-attachments/assets/5ea82c5e-5bf2-4903-8e33-20c0c6b486ec)
 
 bin：存放服务器和客户端的可执行程序
+
 build：cmake编译生成的临时文件
+
 CMakeLists.txt：项目使用cmake作为编译环境
+
 include：项目的头文件
+
 src：项目的源文件
+
 test：muduo网络库使用的demo
+
 thirdparty：存放json.hpp
+
 ## 数据库设计
 ![image](https://github.com/user-attachments/assets/c39934ff-13b5-4b04-bc9a-8a963034c47a)
 
@@ -44,16 +51,20 @@ thirdparty：存放json.hpp
 ## 启动服务器
 这里启动两台服务器，因为Nginx配置tcp负载均衡时配置了两台。
 
-![image](https://github.com/user-attachments/assets/f3bfab93-9a56-4fe0-9482-23cc795aca23)
+![image](https://github.com/user-attachments/assets/82363bd5-0c09-4b5f-8e80-57b1aff31fc0)
+![image](https://github.com/user-attachments/assets/dda5b5e5-7d58-40e1-b76b-97a2ca04dffd)
 
-
-![image](https://github.com/user-attachments/assets/ee2c7c10-9c9b-4279-a393-7c19ea11314a)
-
+![image](https://github.com/user-attachments/assets/849e2ffd-8ca7-4dfc-b336-5edc8d9ea06d)
 
 ## 启动客户端
 同样启动两台客户端进行聊天业务。
 
-在这里插入图片描述
+![image](https://github.com/user-attachments/assets/b81aa0e0-0d38-46bf-9ff6-9c1644b6128d)
+
+由于Nginx，此时client01和client02分别连接到不同的server端
+
+![image](https://github.com/user-attachments/assets/c9d0422a-1066-4f6e-be51-afdf3e963af0)
+
 
 ## 注册账号
 在这里插入图片描述
